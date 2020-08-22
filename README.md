@@ -1,2 +1,2 @@
-# REACT-food-delivery
-Web application for delivering your favourite food
+# REACT-foodmood
+Web application for delivering your favourite food fast and easy.
