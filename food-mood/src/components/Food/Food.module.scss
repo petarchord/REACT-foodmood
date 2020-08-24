@@ -1,0 +1,12 @@
+.container {
+  border: solid 1px burlywood;
+  padding: 1em 1em;
+  background: rgba(20, 20, 20, 0.5);
+  ul {
+    display: flex;
+  }
+
+  li {
+    margin: 0 0.5em;
+  }
+}
