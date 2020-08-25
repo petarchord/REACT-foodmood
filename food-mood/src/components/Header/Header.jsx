@@ -1,9 +1,13 @@
 import React from "react";
 import styles from "./Header.module.scss";
+import HamburgerButton from "../HamburgerButton/HamburgerButton";
 
 const Header = () => {
   return (
     <header className={styles.header}>
+      <div>
+        <HamburgerButton />
+      </div>
       <a className={styles.logo} href="#">
         food mood
       </a>
