@@ -2,11 +2,11 @@ import React from "react";
 import styles from "./Header.module.scss";
 import HamburgerButton from "../HamburgerButton/HamburgerButton";
 
-const Header = () => {
+const Header = ({ toggleSideDrawwer }) => {
   return (
     <header className={styles.header}>
-      <div>
-        <HamburgerButton />
+      <div className={styles.hambruger_btn}>
+        <HamburgerButton toggleSideDrawwer={toggleSideDrawwer} />
       </div>
       <a className={styles.logo} href="#">
         food mood

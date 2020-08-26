@@ -11,6 +11,9 @@ const SideDrawwer = () => {
             Sign in / Register
           </a>
         </li>
+        <li className={styles.divider}>
+          <a href="#">Home</a>
+        </li>
         <li>
           <a href="#">Food</a>
         </li>

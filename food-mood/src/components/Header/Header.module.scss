@@ -8,15 +8,26 @@ $headerColor: black;
   background: $headerColor;
   height: 70px;
   display: flex;
-  justify-content: space-around;
+  // justify-content: space-around;
   align-items: center;
-  padding-right: 10em;
-  padding-left: 2em;
+  // padding-right: 10em;
+  // padding-left: 2em;
+
+  .hambruger_btn {
+    position: relative;
+    left: 1em;
+  }
 
   .logo {
     font-weight: bold;
     font-size: 1.5em;
     color: coral;
+    text-align: center;
+    width: 100%;
+  }
+
+  nav {
+    display: none;
   }
 
   ul {
