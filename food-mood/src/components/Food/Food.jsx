@@ -3,6 +3,8 @@ import styles from "./Food.module.scss";
 import FoodItem from "../FoodItem/FoodItem";
 
 import pizza_img from "../../images/pizzas.jpg";
+import burger_img from "../../images/burger.jpg";
+import pasta_img from "../../images/pasta.jpg";
 
 const Food = () => {
   return (
@@ -22,7 +24,7 @@ const Food = () => {
             <FoodItem
               name="Burger"
               desc="Check out our delishes burgers"
-              img={pizza_img}
+              img={burger_img}
             />
           </a>
         </li>
@@ -31,7 +33,7 @@ const Food = () => {
             <FoodItem
               name="Pasta"
               desc="Check out our pastas"
-              img={pizza_img}
+              img={pasta_img}
             />
           </a>
         </li>
