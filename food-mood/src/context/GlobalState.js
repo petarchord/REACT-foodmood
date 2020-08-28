@@ -2,7 +2,8 @@ import React, { createContext, useReducer } from "react";
 import AppReducer from "./AppReducer";
 
 const initialState = {
-  sideDrawwerOpen: false,
+  bill: 0,
+  order: [],
 };
 
 export const GlobalContext = createContext(initialState);
@@ -10,17 +11,36 @@ export const GlobalContext = createContext(initialState);
 export const GlobalProvider = ({ children }) => {
   const [state, dispatch] = useReducer(AppReducer, initialState);
 
-  function toggleSideDrawwer() {
+  function increaseBill(price) {
     dispatch({
-      type: "TOGGLE_SIDE_DRAWWER",
+      type: "INCREASE_BILL",
+      payload: price,
+    });
+  }
+
+  function addOrderItem(item) {
+    dispatch({
+      type: "ADD_ORDER_ITEM",
+      payload: item,
+    });
+  }
+
+  function removeOrderItem(item) {
+    dispatch({
+      type: "REMOVE_ORDER_ITEM",
+      payload: item,
     });
   }
 
   return (
     <GlobalContext.Provider
       value={{
-        sideDrawwerOpen: state.sideDrawwerOpen,
+        bill: state.bill,
+        order: state.order,
         toggleSideDrawwer,
+        increaseBill,
+        addOrderItem,
+        removeOrderItem,
       }}
     >
       {children}
