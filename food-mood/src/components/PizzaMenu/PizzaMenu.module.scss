@@ -1,6 +1,13 @@
 .container {
-  width: 40%;
-  position: absolute;
+  width: 100%;
+  /* margin-top: 9em; */
+  margin: 0 auto;
   overflow: scroll;
   max-height: 700px;
+  padding: 5em 0em;
+
+  .pizza_menu_title {
+    text-align: left;
+    padding: 2em 1em;
+  }
 }

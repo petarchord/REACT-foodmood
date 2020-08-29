@@ -1,6 +1,6 @@
 import React, { useState, useContext } from "react";
-import styles from "./PizzaMenuItem.scss";
-import GlobalContext from "../../context/GlobalState";
+import styles from "./PizzaMenuItem.module.scss";
+import { GlobalContext } from "../../context/GlobalState";
 
 const PizzaMenuItem = ({ id, name, price, image }) => {
   const [quantity, setQuantity] = useState(1);
@@ -20,8 +20,8 @@ const PizzaMenuItem = ({ id, name, price, image }) => {
   };
 
   return (
-    <div style={styles.container}>
-      <div className={styles.pizza_menu}>
+    <div className={styles.container}>
+      <div className={styles.pizza_menu_item}>
         <div className={styles.pizza_menu_img}>
           <img src={imageUrl} alt="" />
         </div>

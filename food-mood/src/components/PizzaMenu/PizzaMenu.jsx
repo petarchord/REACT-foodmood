@@ -4,16 +4,25 @@ import PizzaMenuItem from "../PizzaMenuItem/PizzaMenuItem";
 
 const PizzaMenu = () => {
   return (
-    <div style={styles.container}>
-      <MenuItem key={0} id={0} name="Tuna Pizza" price={12} image="tuna.jpg" />
-      <MenuItem
+    <div className={styles.container}>
+      <h3 className={styles.pizza_menu_title}>
+        Order your favourite pizza in less than a minute.
+      </h3>
+      <PizzaMenuItem
+        key={0}
+        id={0}
+        name="Tuna Pizza"
+        price={12}
+        image="tuna.jpg"
+      />
+      <PizzaMenuItem
         key={1}
         id={1}
         name="Napolitana"
         price={11}
         image="napolitana.jpg"
       />
-      <MenuItem
+      <PizzaMenuItem
         key={2}
         id={2}
         name="Chili Pizza"

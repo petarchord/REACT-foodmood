@@ -37,7 +37,6 @@ export const GlobalProvider = ({ children }) => {
       value={{
         bill: state.bill,
         order: state.order,
-        toggleSideDrawwer,
         increaseBill,
         addOrderItem,
         removeOrderItem,

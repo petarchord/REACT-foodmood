@@ -1,0 +1,29 @@
+.container {
+  width: 100%;
+}
+
+.pizza_menu_item {
+  display: flex;
+  justify-content: space-around;
+  padding: 2%;
+  border: solid 1px lightgray;
+}
+
+.pizza_menu_img {
+}
+
+.pizza_menu_info {
+  margin: 2% 10%;
+}
+
+.quantity {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.pizza_menu_item img {
+  width: 7em;
+  height: 8em;
+}
