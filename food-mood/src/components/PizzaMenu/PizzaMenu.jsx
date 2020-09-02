@@ -30,10 +30,8 @@ const PizzaMenu = () => {
         price={11.5}
         image="chili.jpg"
       />
-      <div>
-        <h2>I am down</h2>
-      </div>
-      {/* <ShopingCart /> */}
+
+      <ShopingCart />
     </div>
   );
 };

@@ -1,8 +1,8 @@
 import React, { useContext } from "react";
-import down_arrow from "../../images/down-arrow.svg";
 import { GlobalContext } from "../../context/GlobalState";
 import Order from "../Order/Order";
 import styles from "./ShopingCart.module.scss";
+import { MdKeyboardArrowDown } from "react-icons/md";
 
 const ShopingCart = () => {
   const { bill } = useContext(GlobalContext);
@@ -11,7 +11,7 @@ const ShopingCart = () => {
       <div className={styles.cart_wrapper}>
         <h3>Shoping Cart</h3>
         <p>{bill}$</p>
-        <img className={styles.down_arrow} src={down_arrow} alt="down arrow" />
+        <MdKeyboardArrowDown color="white" size="2em" />
       </div>
       <Order />
       <div className={styles.bill_wrapper}>
