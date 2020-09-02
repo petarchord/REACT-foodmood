@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "./PizzaMenu.module.scss";
 import PizzaMenuItem from "../PizzaMenuItem/PizzaMenuItem";
+import ShopingCart from "../ShopingCart/ShopingCart";
 
 const PizzaMenu = () => {
   return (
@@ -29,6 +30,10 @@ const PizzaMenu = () => {
         price={11.5}
         image="chili.jpg"
       />
+      <div>
+        <h2>I am down</h2>
+      </div>
+      {/* <ShopingCart /> */}
     </div>
   );
 };

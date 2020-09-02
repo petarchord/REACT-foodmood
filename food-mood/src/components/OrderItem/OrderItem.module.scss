@@ -1,0 +1,24 @@
+.container {
+  .order_item {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: solid 1px gray;
+  }
+
+  img {
+    width: 7em;
+    height: 7em;
+    filter: none;
+  }
+
+  .info_wrapper {
+    position: relative;
+    top: -0.8em;
+  }
+
+  .btn_quantity_wrapper {
+    position: relative;
+    top: 0.5em;
+    right: 0.7em;
+  }
+}

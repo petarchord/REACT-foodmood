@@ -6,7 +6,7 @@ const PizzaMenuItem = ({ id, name, price, image }) => {
   const [quantity, setQuantity] = useState(1);
   const { increaseBill, addOrderItem } = useContext(GlobalContext);
   const imageUrl = `https://yummi-pizza-laravel.herokuapp.com/storage/pizzas/${image}`;
-  const AddToShopingCart = () => {
+  const addItemClickHandler = () => {
     const bill = quantity * price;
     increaseBill(bill);
     const menuItem = {
@@ -30,7 +30,7 @@ const PizzaMenuItem = ({ id, name, price, image }) => {
           <p>{price}€</p>
           <button
             onClick={() => {
-              AddToShopingCart();
+              addItemClickHandler();
             }}
           >
             Add to shoping cart
