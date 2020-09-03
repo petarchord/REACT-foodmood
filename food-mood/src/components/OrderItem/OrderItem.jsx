@@ -23,7 +23,7 @@ const OrderItem = ({ id, name, price, image, quantity }) => {
         <img src={imageUrl} alt="" />
         <div className={styles.info_wrapper}>
           <h3>{name}</h3>
-          <p>{price}</p>
+          <p>{price}$</p>
         </div>
         <div className={styles.btn_quantity_wrapper}>
           <button

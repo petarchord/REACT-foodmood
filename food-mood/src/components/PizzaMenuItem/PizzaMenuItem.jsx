@@ -27,7 +27,7 @@ const PizzaMenuItem = ({ id, name, price, image }) => {
         </div>
         <div className={styles.pizza_menu_info}>
           <h3>{name}</h3>
-          <p>{price}€</p>
+          <p>{price}$</p>
           <button
             onClick={() => {
               addItemClickHandler();
