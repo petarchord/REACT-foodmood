@@ -1,12 +1,14 @@
-import React, { useContext } from "react";
+import React, { useContext, useState } from "react";
 import { GlobalContext } from "../../context/GlobalState";
 import Order from "../Order/Order";
 import styles from "./ShopingCart.module.scss";
+import OrderModal from "../Modals/OrderModal/OrderModal";
 import { MdKeyboardArrowUp } from "react-icons/md";
 import { MdKeyboardArrowDown } from "react-icons/md";
 
 const ShopingCart = () => {
   const { bill } = useContext(GlobalContext);
+  const [modalIsOpen, setModalIsOpen] = useState(false);
 
   const extendCartClickHandler = (e) => {
     let currentArrow;
@@ -25,6 +27,7 @@ const ShopingCart = () => {
   };
   return (
     <div className={styles.container}>
+      <OrderModal open={modalIsOpen} setModal={setModalIsOpen} bill={bill} />
       <div className={styles.cart_wrapper}>
         <h3>Shoping Cart</h3>
         <p>{bill}$</p>
@@ -53,6 +56,9 @@ const ShopingCart = () => {
         <button
           style={bill <= 0 ? { background: "gray" } : { background: "coral" }}
           disabled={bill <= 0 ? true : false}
+          onClick={() => {
+            setModalIsOpen(true);
+          }}
         >
           Continue
         </button>

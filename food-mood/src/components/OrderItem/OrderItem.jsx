@@ -2,6 +2,7 @@ import React, { useContext } from "react";
 
 import styles from "./OrderItem.module.scss";
 import { GlobalContext } from "../../context/GlobalState";
+import { MdClear } from "react-icons/md";
 
 const OrderItem = ({ id, name, price, image, quantity }) => {
   const { removeOrderItem } = useContext(GlobalContext);
@@ -33,6 +34,11 @@ const OrderItem = ({ id, name, price, image, quantity }) => {
           >
             x
           </button>
+          {/* <MdClear
+            color="white"
+            size="1.5em"
+            style={{ border: "solid 1px white" }}
+          /> */}
           <p>x{quantity}</p>
         </div>
       </div>
