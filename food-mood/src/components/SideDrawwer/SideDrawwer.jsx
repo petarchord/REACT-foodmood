@@ -1,27 +1,65 @@
 import React from "react";
 
 import styles from "./SideDrawwer.module.scss";
-
-const SideDrawwer = () => {
+import { Link } from "react-router-dom";
+import { Link as LinkScroll } from "react-scroll";
+const SideDrawwer = ({ toggleSideDrawwer }) => {
   return (
     <nav className={styles.side_drawwer}>
       <ul>
         <li>
-          <a href="#" className={styles.signin}>
+          <Link
+            onClick={() => {
+              toggleSideDrawwer();
+            }}
+            to="/"
+            className={styles.signin}
+          >
             Sign in / Register
-          </a>
+          </Link>
         </li>
         <li className={styles.divider}>
-          <a href="#">Home</a>
+          <Link
+            onClick={() => {
+              toggleSideDrawwer();
+            }}
+            to="/"
+          >
+            Home
+          </Link>
         </li>
         <li>
-          <a href="#">Food</a>
+          <LinkScroll
+            onClick={() => {
+              toggleSideDrawwer();
+            }}
+            to="second_title"
+            smooth={true}
+            duration={500}
+            offset={-90}
+          >
+            Food
+          </LinkScroll>
         </li>
         <li>
-          <a href="#">About</a>
+          <Link
+            onClick={() => {
+              toggleSideDrawwer();
+            }}
+            to="/"
+          >
+            About
+          </Link>
         </li>
         <li>
-          <a href="#">Contact</a>
+          <Link
+            onClick={() => {
+              toggleSideDrawwer();
+            }}
+            to="/"
+          >
+            Contact
+          </Link>
         </li>
       </ul>
     </nav>

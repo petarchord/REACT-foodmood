@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "./Header.module.scss";
 import HamburgerButton from "../HamburgerButton/HamburgerButton";
+import { Link } from "react-router-dom";
 
 const Header = ({ toggleSideDrawwer }) => {
   return (
@@ -8,9 +9,9 @@ const Header = ({ toggleSideDrawwer }) => {
       <div className={styles.hambruger_btn}>
         <HamburgerButton toggleSideDrawwer={toggleSideDrawwer} />
       </div>
-      <a className={styles.logo} href="#">
+      <Link className={styles.logo} to="/">
         food mood
-      </a>
+      </Link>
       <nav>
         <ul>
           <li>

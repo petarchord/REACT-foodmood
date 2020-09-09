@@ -10,6 +10,7 @@ import {
   PastaMenu,
 } from "./components";
 import { GlobalProvider, GlobalContext } from "./context/GlobalState";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 function App() {
   const [sideDrawwerOpen, setSideDrawwer] = useState(false);
@@ -19,14 +20,23 @@ function App() {
 
   return (
     <GlobalProvider>
-      <div className={styles.container}>
-        {sideDrawwerOpen ? <SideDrawwer /> : null}
-        {sideDrawwerOpen ? (
-          <BackDrop toggleSideDrawwer={toggleSideDrawwer} />
-        ) : null}
-        <Header toggleSideDrawwer={toggleSideDrawwer} />
-        <Home />
-      </div>
+      <Router>
+        <div className={styles.container}>
+          {sideDrawwerOpen ? (
+            <SideDrawwer toggleSideDrawwer={toggleSideDrawwer} />
+          ) : null}
+          {sideDrawwerOpen ? (
+            <BackDrop toggleSideDrawwer={toggleSideDrawwer} />
+          ) : null}
+          <Header toggleSideDrawwer={toggleSideDrawwer} />
+          <Switch>
+            <Route path="/" exact component={Home} />
+            <Route path="/pizzamenu" component={PizzaMenu} />
+            <Route path="/burgermenu" component={BurgerMenu} />
+            <Route path="/pastamenu" component={PastaMenu} />
+          </Switch>
+        </div>
+      </Router>
     </GlobalProvider>
   );
 }

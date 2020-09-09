@@ -11,9 +11,38 @@
 
   h1 {
     margin-top: 5em;
+    animation-name: welcome_text;
+    animation-duration: 3s;
+  }
+
+  .second_title {
+    animation-name: secont_title;
+    animation-duration: 3s;
   }
 
   h2 {
-    margin-top: 11em;
+    margin-top: 10em;
+    animation-name: second_title;
+    animation-duration: 3s;
+  }
+}
+
+@keyframes welcome_text {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes second_title {
+  0% {
+    margin-top: 15em;
+  }
+
+  100% {
+    margin-top: 10em;
   }
 }
