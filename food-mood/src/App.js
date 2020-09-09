@@ -17,7 +17,7 @@ function App() {
           <BackDrop toggleSideDrawwer={toggleSideDrawwer} />
         ) : null}
         <Header toggleSideDrawwer={toggleSideDrawwer} />
-        <PizzaMenu />
+        <Home />
       </div>
     </GlobalProvider>
   );

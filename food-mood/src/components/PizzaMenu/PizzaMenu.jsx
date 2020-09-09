@@ -31,6 +31,14 @@ const PizzaMenu = () => {
         image="chili.jpg"
       />
 
+      <PizzaMenuItem
+        key={3}
+        id={3}
+        name="Kalimero Pizza"
+        price={11.5}
+        image="kalimero.jpg"
+      />
+
       <ShopingCart />
     </div>
   );

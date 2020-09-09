@@ -47,7 +47,13 @@ const ShopingCart = () => {
           display="none"
         />
       </div>
-      <Order />
+      {bill ? (
+        <Order />
+      ) : (
+        <p className={styles.empty_cart_text}>
+          Your shoping cart is empty. Grab some food to proceed.
+        </p>
+      )}
       <div className={styles.bill_wrapper}>
         <h3>Your bill</h3>
         <p>{bill}$</p>
