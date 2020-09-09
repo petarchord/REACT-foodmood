@@ -1,6 +1,14 @@
 import React, { useContext, useState } from "react";
 import styles from "./App.module.scss";
-import { Header, Home, SideDrawwer, BackDrop, PizzaMenu } from "./components";
+import {
+  Header,
+  Home,
+  SideDrawwer,
+  BackDrop,
+  PizzaMenu,
+  BurgerMenu,
+  PastaMenu,
+} from "./components";
 import { GlobalProvider, GlobalContext } from "./context/GlobalState";
 
 function App() {

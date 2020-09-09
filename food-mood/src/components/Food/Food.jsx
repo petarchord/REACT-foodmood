@@ -37,7 +37,6 @@ const Food = () => {
             />
           </a>
         </li>
-        <li></li>
       </ul>
     </div>
   );

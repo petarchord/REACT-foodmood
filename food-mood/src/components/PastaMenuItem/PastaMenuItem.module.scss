@@ -1,0 +1,29 @@
+.container {
+  width: 100%;
+}
+
+.pasta_menu_item {
+  display: flex;
+  justify-content: space-around;
+  padding: 2%;
+  border: solid 1px lightgray;
+}
+
+.pasta_menu_img {
+}
+
+.pasta_menu_info {
+  margin: 2% 10%;
+}
+
+.quantity {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.pasta_menu_item img {
+  width: 7em;
+  height: 8em;
+}

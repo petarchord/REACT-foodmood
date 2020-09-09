@@ -7,7 +7,9 @@ const Home = () => {
     <div className={styles.container}>
       <div className={styles.home_wrapper}>
         <h1>We deliver your favourite food fast and easy.</h1>
-        <h2>What's your food mood today?</h2>
+        <h2>
+          What's your <span style={{ color: "coral" }}>food mood</span> today?
+        </h2>
         <Food />
       </div>
     </div>
