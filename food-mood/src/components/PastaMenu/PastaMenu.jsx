@@ -7,7 +7,8 @@ const PastaMenu = () => {
   return (
     <div className={styles.container}>
       <h3 className={styles.pasta_menu_title}>
-        Order your favourite pasta in less than a minute.
+        Order your favourite <span style={{ color: "coral" }}>pasta</span> in
+        less than a minute.
       </h3>
       <PastaMenuItem
         key={0}

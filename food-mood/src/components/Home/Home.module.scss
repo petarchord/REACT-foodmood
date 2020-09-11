@@ -25,6 +25,29 @@
     animation-name: second_title;
     animation-duration: 3s;
   }
+
+  footer {
+    h2 {
+      text-align: center;
+      color: coral;
+      margin-top: 4em;
+    }
+
+    p {
+      text-align: center;
+      margin: 1.5em 0;
+    }
+
+    .social_networks {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    svg {
+      margin: 0 1em;
+    }
+  }
 }
 
 @keyframes welcome_text {

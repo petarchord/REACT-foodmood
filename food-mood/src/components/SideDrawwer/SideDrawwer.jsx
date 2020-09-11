@@ -1,16 +1,19 @@
-import React from "react";
-
+import React, { useState } from "react";
+import SignInModal from "../Modals/SignInModal/SignInModal";
 import styles from "./SideDrawwer.module.scss";
 import { Link } from "react-router-dom";
 import { Link as LinkScroll } from "react-scroll";
 const SideDrawwer = ({ toggleSideDrawwer }) => {
+  const [modalIsOpen, setModalIsOpen] = useState(false);
   return (
     <nav className={styles.side_drawwer}>
+      <SignInModal open={modalIsOpen} setModal={setModalIsOpen} />
       <ul>
         <li>
           <Link
             onClick={() => {
-              toggleSideDrawwer();
+              setModalIsOpen(true);
+              //  toggleSideDrawwer();
             }}
             to="/"
             className={styles.signin}

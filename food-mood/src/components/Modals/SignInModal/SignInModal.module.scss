@@ -1,0 +1,36 @@
+.container {
+}
+
+.signin_modal_content {
+  color: black;
+  border: 1px solid gray;
+  background: white;
+  border-radius: 4px;
+  padding: 2em;
+}
+
+.signin_modal_overlay {
+  position: fixed;
+  height: fit-content;
+  width: 95%;
+  top: 2em;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: 0 auto;
+  z-index: 11;
+}
+
+.header_exitbtn_wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.google_fb_wrapper {
+  .google_btn {
+  }
+
+  .fb_btn {
+  }
+}
