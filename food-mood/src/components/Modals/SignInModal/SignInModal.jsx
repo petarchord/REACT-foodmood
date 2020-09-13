@@ -40,24 +40,22 @@ const SignInModal = ({ open, setModal }) => {
             />
           </div>
           <div className={styles.google_fb_wrapper}>
-            <div className={styles.google_btn}>
-              <GoogleLogin
-                clientId="37721926306-04lhbdhm6b4btbifcg2987jvcdfgec5r.apps.googleusercontent.com"
-                buttonText="Sign in with google"
-                onSuccess={responseGoogle}
-                onFailure={responseGoogle}
-                cookiePolicy={"single_host_origin"}
-              />
-            </div>
-            <div className={styles.fb_btn}>
-              <FacebookLogin
-                appId="778201083011422"
-                autoLoad={true}
-                fields="name,email,picture"
-                textButton="Sign in with facebook"
-                callback={responseFacebook}
-              />
-            </div>
+            <GoogleLogin
+              clientId="37721926306-04lhbdhm6b4btbifcg2987jvcdfgec5r.apps.googleusercontent.com"
+              buttonText="Sign in with google"
+              onSuccess={responseGoogle}
+              onFailure={responseGoogle}
+              cookiePolicy={"single_host_origin"}
+              className={styles.google_btn}
+            />
+            <FacebookLogin
+              appId="778201083011422"
+              autoLoad={true}
+              fields="name,email,picture"
+              textButton="Sign in with facebook"
+              callback={responseFacebook}
+              className={styles.fb_btn}
+            />
           </div>
         </div>
       </Modal>
