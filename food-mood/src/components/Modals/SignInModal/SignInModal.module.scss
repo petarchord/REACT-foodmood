@@ -1,6 +1,46 @@
 .container {
 }
 
+.or_divider {
+  text-align: center;
+  border-top: solid 1px lightgray;
+  border-bottom: solid 1px lightgray;
+  padding: 10px;
+}
+
+form {
+  input {
+    height: 2.5em;
+    margin: 1em 0;
+    border: gray solid 1px;
+    border-radius: 4px;
+  }
+
+  .email_field {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .password_field {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .submit_btn {
+    width: 100%;
+    height: 2.5em;
+    background: coral;
+    color: white;
+    border: none;
+  }
+}
+
+.sign_up {
+  a {
+    color: coral;
+  }
+}
+
 .signin_modal_content {
   color: black;
   border: 1px solid gray;
@@ -19,6 +59,8 @@
   bottom: 0;
   margin: 0 auto;
   z-index: 11;
+  max-height: 33em;
+  overflow: scroll;
 }
 
 .header_exitbtn_wrapper {
@@ -39,7 +81,7 @@
 }
 
 .google_fb_wrapper {
-  margin-top: 4em;
+  margin-top: 2em;
   .google_btn {
     display: flex;
     flex-direction: row;
@@ -48,6 +90,7 @@
     font-family: Montserrat !important;
     font-size: 15px !important;
     color: black !important;
+    margin: 1em 0;
     // background-color: rgb(255, 255, 255);
     // display: inline-flex;
     // align-items: center;
@@ -67,5 +110,16 @@
   }
 
   .fb_btn {
+    width: 100%;
+    font-family: "Montserrat";
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    justify-content: center;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 2px 2px 0px,
+      rgba(0, 0, 0, 0.24) 0px 0px 1px 0px;
+    background: rgb(255, 255, 255);
+    border: none;
   }
 }

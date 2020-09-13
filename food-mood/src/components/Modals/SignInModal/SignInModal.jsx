@@ -4,6 +4,7 @@ import Modal from "react-modal";
 import { MdClear } from "react-icons/md";
 import GoogleLogin from "react-google-login";
 import FacebookLogin from "react-facebook-login";
+import { SiFacebook } from "react-icons/si";
 
 Modal.setAppElement("#root");
 const SignInModal = ({ open, setModal }) => {
@@ -50,13 +51,53 @@ const SignInModal = ({ open, setModal }) => {
             />
             <FacebookLogin
               appId="778201083011422"
-              autoLoad={true}
+              autoLoad={false}
               fields="name,email,picture"
               textButton="Sign in with facebook"
               callback={responseFacebook}
-              className={styles.fb_btn}
+              cssClass={styles.fb_btn}
+              icon={
+                <SiFacebook
+                  style={{ width: "18px", height: "18px", marginRight: "15px" }}
+                  color="darkblue"
+                />
+              }
+              // className={styles.fb_btn}
             />
           </div>
+          <p className={styles.or_divider}>or</p>
+          <form>
+            <div className={styles.email_field}>
+              <label htmlFor="email">E-address</label>
+              <input
+                type="email"
+                name="email"
+                placeholder="Email address"
+                required
+              />
+            </div>
+            <div className={styles.password_field}>
+              <label htmlFor="password">Password</label>
+              <input
+                type="password"
+                name="password"
+                placeholder="Password"
+                required
+              />
+            </div>
+            <input
+              type="submit"
+              value="Sign in"
+              className={styles.submit_btn}
+            />
+          </form>
+          {/* <div>
+            <p></p>
+            <a href=""></a>
+          </div> */}
+          <p className={styles.sign_up}>
+            You don't have an account? <a href="#">Sign up here.</a>{" "}
+          </p>
         </div>
       </Modal>
     </div>
