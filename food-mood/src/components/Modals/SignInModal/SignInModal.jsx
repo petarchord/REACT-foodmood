@@ -1,13 +1,17 @@
-import React from "react";
+import React, { useState } from "react";
 import styles from "./SignInModal.module.scss";
 import Modal from "react-modal";
 import { MdClear } from "react-icons/md";
 import GoogleLogin from "react-google-login";
 import FacebookLogin from "react-facebook-login";
 import { SiFacebook } from "react-icons/si";
+import { GoMail } from "react-icons/go";
 
 Modal.setAppElement("#root");
 const SignInModal = ({ open, setModal }) => {
+  const [signUpClicked, setSignUpClicked] = useState(false);
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
   const responseGoogle = (response) => {
     console.log(response);
     console.log(response.profileObj);
@@ -27,10 +31,26 @@ const SignInModal = ({ open, setModal }) => {
         className={styles.signin_modal_content}
         overlayClassName={styles.signin_modal_overlay}
       >
+        {/* <div className={styles.signup_wrapper}>
+        <div className={styles.header_exitbtn_wrapper}>
+            <h3>
+              Register to <span style={{ color: "coral" }}>food mood</span>
+            </h3>
+            <MdClear
+              color="gray"
+              size="1.2em"
+              onClick={() => {
+                setModal(false);
+              }}
+            />
+          </div>
+
+        </div> */}
         <div className={styles.signin_wrapper}>
           <div className={styles.header_exitbtn_wrapper}>
             <h3>
-              Sign in to <span style={{ color: "coral" }}>food mood</span>
+              {signUpClicked ? "Register to " : "Sign in to "}
+              <span style={{ color: "coral" }}>food mood</span>
             </h3>
             <MdClear
               color="gray"
@@ -66,7 +86,14 @@ const SignInModal = ({ open, setModal }) => {
             />
           </div>
           <p className={styles.or_divider}>or</p>
-          <form>
+
+          <button className={styles.signin_btn}>
+            <GoMail
+              style={{ width: "18px", height: "18px", marginRight: "15px" }}
+            />
+            <span>Sign in with e-address</span>
+          </button>
+          {/* <form>
             <div className={styles.email_field}>
               <label htmlFor="email">E-address</label>
               <input
@@ -90,13 +117,21 @@ const SignInModal = ({ open, setModal }) => {
               value="Sign in"
               className={styles.submit_btn}
             />
-          </form>
+          </form> */}
           {/* <div>
             <p></p>
             <a href=""></a>
           </div> */}
           <p className={styles.sign_up}>
-            You don't have an account? <a href="#">Sign up here.</a>{" "}
+            You don't have an account?{" "}
+            <a
+              onClick={() => {
+                Modal.scrollTo({ top: 0, behavior: "smooth" });
+                setSignUpClicked(true);
+              }}
+            >
+              Sign up here.
+            </a>{" "}
           </p>
         </div>
       </Modal>

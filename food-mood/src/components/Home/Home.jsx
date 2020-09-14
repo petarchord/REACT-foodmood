@@ -2,6 +2,7 @@ import React from "react";
 import styles from "./Home.module.scss";
 import Food from "../Food/Food";
 import { ImFacebook, ImInstagram, ImYoutube } from "react-icons/im";
+import { FaArrowCircleUp } from "react-icons/fa";
 
 const Home = () => {
   return (
@@ -24,6 +25,16 @@ const Home = () => {
             <ImYoutube size="1.5em" color="white" />
           </div>
         </footer>
+        <div className={styles.arrow_up}>
+          <FaArrowCircleUp
+            onClick={() => {
+              window.scrollTo({ top: 0, behavior: "smooth" });
+            }}
+            size="2em"
+            color="white"
+          />
+          <p>Take me to the top.</p>
+        </div>
       </div>
     </div>
   );

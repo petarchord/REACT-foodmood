@@ -8,12 +8,33 @@
   padding: 10px;
 }
 
+.signin_btn {
+  width: 100%;
+  font-family: "Montserrat";
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  justify-content: center;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 2px 2px 0px,
+    rgba(0, 0, 0, 0.24) 0px 0px 1px 0px;
+  background: white;
+  border: none;
+  font-weight: bold;
+}
+
 form {
+  label {
+    font-size: 15px;
+    font-weight: bold;
+  }
+
   input {
     height: 2.5em;
     margin: 1em 0;
     border: gray solid 1px;
     border-radius: 4px;
+    text-indent: 0.5em;
   }
 
   .email_field {
@@ -32,6 +53,8 @@ form {
     background: coral;
     color: white;
     border: none;
+    font-size: 1em;
+    font-weight: bold;
   }
 }
 
@@ -59,8 +82,8 @@ form {
   bottom: 0;
   margin: 0 auto;
   z-index: 11;
-  max-height: 33em;
-  overflow: scroll;
+  // max-height: 33em;
+  // overflow: scroll;
 }
 
 .header_exitbtn_wrapper {
@@ -106,6 +129,7 @@ form {
 
     span {
       padding: 0 0 4px 0 !important;
+      font-weight: bold !important;
     }
   }
 
@@ -121,5 +145,6 @@ form {
       rgba(0, 0, 0, 0.24) 0px 0px 1px 0px;
     background: rgb(255, 255, 255);
     border: none;
+    font-weight: bold;
   }
 }
