@@ -12,10 +12,6 @@ const SignInModal = ({ open, setModal }) => {
   const [currentLayout, setCurrentLayout] = useState(0);
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  const responseGoogle = (response) => {
-    console.log(response);
-    console.log(response.profileObj);
-  };
 
   const renderCurrentLayout = () => {
     switch (currentLayout) {
@@ -210,8 +206,26 @@ const SignInModal = ({ open, setModal }) => {
     }
   };
 
+  const responseGoogle = (response) => {
+    const {
+      email,
+      familyName,
+      givenName,
+      imageUrl,
+      name,
+    } = response.profileObj;
+    const user = { email, familyName, givenName, imageUrl, name };
+    localStorage.setItem("user", JSON.stringify(user));
+    setModal(false);
+  };
+
   const responseFacebook = (response) => {
     console.log(response);
+    const imageUrl = response.picture.data.url;
+    const { email, name } = response;
+    const user = { email, name, imageUrl };
+    localStorage.setItem("user", JSON.stringify(user));
+    setModal(false);
   };
 
   return (

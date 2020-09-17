@@ -10,15 +10,40 @@
 
   z-index: 10;
 
+  .user_info {
+    margin-bottom: 0;
+  }
+
+  .signin_li {
+    margin: 3em 0;
+  }
+
+  .user_wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    img {
+      border-radius: 50%;
+      width: 4em;
+      height: 4em;
+    }
+
+    h5 {
+      color: black;
+      font-size: 0.9em;
+    }
+  }
+
   ul {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 4em;
+    // margin-top: 4em;
   }
 
   li {
-    margin: 1.5em;
+    margin: 1.2em;
   }
   .divider {
     border-top: solid 1px black;
