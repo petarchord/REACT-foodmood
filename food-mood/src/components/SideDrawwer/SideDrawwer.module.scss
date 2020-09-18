@@ -20,18 +20,19 @@
 
   .user_wrapper {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
 
     img {
       border-radius: 50%;
-      width: 4em;
-      height: 4em;
+      width: 3em;
+      height: 3em;
     }
 
     h5 {
       color: black;
       font-size: 0.9em;
+      margin: 1em;
     }
   }
 

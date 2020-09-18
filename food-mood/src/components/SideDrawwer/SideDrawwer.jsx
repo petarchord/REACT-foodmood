@@ -3,6 +3,7 @@ import SignInModal from "../Modals/SignInModal/SignInModal";
 import styles from "./SideDrawwer.module.scss";
 import { Link } from "react-router-dom";
 import { Link as LinkScroll } from "react-scroll";
+import { MdKeyboardArrowRight } from "react-icons/md";
 const SideDrawwer = ({ toggleSideDrawwer }) => {
   const [modalIsOpen, setModalIsOpen] = useState(false);
   let user;
@@ -19,10 +20,18 @@ const SideDrawwer = ({ toggleSideDrawwer }) => {
       <ul>
         {user ? (
           <li className={styles.user_info}>
-            <div className={styles.user_wrapper}>
-              <img src={user.imageUrl} alt="user image" />
-              <h5>{user.name}</h5>
-            </div>
+            <Link
+              to="/profile"
+              onClick={() => {
+                toggleSideDrawwer();
+              }}
+            >
+              <div className={styles.user_wrapper}>
+                <img src={user.imageUrl} alt={user.name} />
+                <h5>{user.name}</h5>
+                <MdKeyboardArrowRight color="black" size="1.5em" />
+              </div>
+            </Link>
           </li>
         ) : (
           <li className={styles.signin_li}>

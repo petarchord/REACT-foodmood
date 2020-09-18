@@ -8,6 +8,7 @@ import {
   PizzaMenu,
   BurgerMenu,
   PastaMenu,
+  UserProfile,
 } from "./components";
 import { GlobalProvider, GlobalContext } from "./context/GlobalState";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
@@ -34,6 +35,7 @@ function App() {
             <Route path="/pizzamenu" component={PizzaMenu} />
             <Route path="/burgermenu" component={BurgerMenu} />
             <Route path="/pastamenu" component={PastaMenu} />
+            <Route path="/profile" component={UserProfile} />
           </Switch>
         </div>
       </Router>

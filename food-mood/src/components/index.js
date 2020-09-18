@@ -5,3 +5,4 @@ export { default as BackDrop } from "./Common/Backdrop/Backdrop";
 export { default as PizzaMenu } from "./PizzaMenu/PizzaMenu";
 export { default as BurgerMenu } from "./BurgerMenu/BurgerMenu";
 export { default as PastaMenu } from "./PastaMenu/PastaMenu";
+export { default as UserProfile } from "./UserProfile/UserProfile";
