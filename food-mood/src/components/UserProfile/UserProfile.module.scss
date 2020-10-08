@@ -1,5 +1,29 @@
 .container {
   margin-top: 6em;
+
+  nav {
+    margin: 0 auto;
+    width: 90%;
+    /* border: solid 1px gray; */
+    padding: 1em;
+    border-radius: 5px;
+    font-size: 0.9em;
+    font-weight: bold;
+    ul {
+      display: flex;
+      overflow-x: auto;
+      white-space: nowrap;
+      li {
+        padding: 1em;
+        border-radius: 5px;
+      }
+    }
+  }
+
+  .selected {
+    background: slategray;
+  }
+
   .user_profile {
     display: flex;
     flex-direction: column;
@@ -17,6 +41,22 @@
     }
     h4 {
       color: white;
+    }
+  }
+  .user_info_form {
+    margin: 0 auto;
+    width: 80%;
+    /* padding: 0em; */
+    margin-top: 2em;
+
+    .email_field {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .phone_field {
+      display: flex;
+      flex-direction: column;
     }
   }
 }
