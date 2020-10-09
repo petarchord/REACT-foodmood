@@ -17,7 +17,7 @@ const UserProfile = () => {
         <h4>{user.name}</h4>
       </div>
       <div className={styles.user_info_form}>
-        <h5>Your personal info</h5>
+        <h3>Your personal info</h3>
         <p>Don't forget to save your changes</p>
         <form>
           <div className={styles.name_field}>
@@ -39,6 +39,23 @@ const UserProfile = () => {
               </div>
           <input type="submit" value="Save" className={styles.submit_btn} />
         </form>
+      </div>
+      <div className={styles.change_password_form}>
+        <h3>
+          Change password
+        </h3>
+        <form>
+        <div className={styles.current_password_field}>
+            <label htmlFor="email">Current password</label>
+            <input type="password" name="current_password"  />
+          </div>
+          <div className={styles.new_password_field}>
+            <label htmlFor="email">New password</label>
+            <input type="password" name="new_password"  />
+          </div>
+          <input type="submit" value="Save" className={styles.submit_btn} />
+        </form>
+
       </div>
     </div>
   );
