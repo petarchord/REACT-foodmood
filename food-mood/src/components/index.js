@@ -6,3 +6,5 @@ export { default as PizzaMenu } from "./PizzaMenu/PizzaMenu";
 export { default as BurgerMenu } from "./BurgerMenu/BurgerMenu";
 export { default as PastaMenu } from "./PastaMenu/PastaMenu";
 export { default as UserProfile } from "./UserProfile/UserProfile";
+export {default as UserNavbar} from "./UserNavbar/UserNavbar";
+export {default as UserOrders} from "./UserOrders/UserOrders";

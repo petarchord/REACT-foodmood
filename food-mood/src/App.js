@@ -9,6 +9,8 @@ import {
   BurgerMenu,
   PastaMenu,
   UserProfile,
+  UserNavbar,
+  UserOrders
 } from "./components";
 import { GlobalProvider, GlobalContext } from "./context/GlobalState";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
@@ -35,7 +37,10 @@ function App() {
             <Route path="/pizzamenu" component={PizzaMenu} />
             <Route path="/burgermenu" component={BurgerMenu} />
             <Route path="/pastamenu" component={PastaMenu} />
-            <Route path="/profile" component={UserProfile} />
+            <Route path="/profile/orders" component={UserOrders} />
+            <Route path="/profile" component={UserNavbar} />
+            
+            
           </Switch>
         </div>
       </Router>

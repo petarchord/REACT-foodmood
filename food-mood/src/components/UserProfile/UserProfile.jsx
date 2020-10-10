@@ -5,13 +5,13 @@ const UserProfile = () => {
   let user = JSON.parse(localStorage.getItem("user"));
   return (
     <div className={styles.container}>
-      <nav>
+      {/* <nav>
         <ul>
           <li className={styles.selected}>Profile</li>
           <li>My Orders</li>
           <li>Online Payment</li>
         </ul>
-      </nav>
+      </nav> */}
       <div className={styles.user_profile}>
         <img src={user.imageUrl} alt={user.name} />
         <h4>{user.name}</h4>

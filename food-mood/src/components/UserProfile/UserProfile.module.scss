@@ -1,6 +1,4 @@
 .container {
-  margin-top: 6em;
-
   nav {
     margin: 0 auto;
     width: 90%;
@@ -19,7 +17,7 @@
     }
   }
 
-  .selected {
+  .active {
     background: slategray;
   }
 

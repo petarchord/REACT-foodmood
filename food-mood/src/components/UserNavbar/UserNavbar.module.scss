@@ -1,0 +1,25 @@
+.container {
+  margin-top: 6em;
+
+  nav {
+    margin: 0 auto;
+    width: 90%;
+    padding-bottom: 3em;
+    border-radius: 5px;
+    font-size: 0.9em;
+    font-weight: bold;
+    ul {
+      display: flex;
+      overflow-x: auto;
+      white-space: nowrap;
+      li {
+        padding: 1em;
+        border-radius: 5px;
+      }
+    }
+  }
+
+  .active {
+    background: slategray;
+  }
+}
