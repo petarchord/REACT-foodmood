@@ -1,13 +1,15 @@
-import React from "react";
+import React, {useState} from "react";
 import styles from "./UserNavbar.module.scss";
 import UserProfile from "../UserProfile/UserProfile";
 import { Link } from "react-router-dom";
 const UserNavbar = () => {
+    const [selected ,setSelected] = useState(0);
     return ( <div className={styles.container}>
        <nav>
         <ul>
-          <li className={styles.active}>
-          <Link 
+          <li className={selected === 0 ? styles.active : ""}>
+          <Link
+          onClick = {() => {setSelected(0)}} 
           to="/profile"
           >
           Profile
@@ -15,15 +17,17 @@ const UserNavbar = () => {
 
 
           </li>
-          <li>
+          <li className={selected === 1 ? styles.active : ""}>
             <Link
+            onClick={() => {setSelected(1)}}
             to="/profile/orders"
             >
             My Orders
             </Link>
           </li>
-          <li>
+          <li className={selected === 2 ? styles.active : ""}>
           <Link
+          onClick = {() => {setSelected(2)}}
           to="/profile/payment"
           >
           Online Payment
@@ -32,7 +36,7 @@ const UserNavbar = () => {
           </li>
         </ul>
       </nav>
-      <UserProfile />
+      {selected === 0 ? <UserProfile /> : ""}
 
     </div> );
 }

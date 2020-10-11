@@ -32,13 +32,18 @@ function App() {
             <BackDrop toggleSideDrawwer={toggleSideDrawwer} />
           ) : null}
           <Header toggleSideDrawwer={toggleSideDrawwer} />
+          
+          <Route path="/profile" component={UserNavbar} />
+          <Route path="/profile/orders" component={UserOrders} />  
           <Switch>
             <Route path="/" exact component={Home} />
             <Route path="/pizzamenu" component={PizzaMenu} />
             <Route path="/burgermenu" component={BurgerMenu} />
             <Route path="/pastamenu" component={PastaMenu} />
-            <Route path="/profile/orders" component={UserOrders} />
-            <Route path="/profile" component={UserNavbar} />
+            
+            
+            
+            
             
             
           </Switch>

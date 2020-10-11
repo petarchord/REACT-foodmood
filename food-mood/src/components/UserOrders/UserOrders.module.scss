@@ -1,4 +1,18 @@
 .container {
+  margin: 0 auto;
+  width: 90%;
   .orders {
+    p {
+      padding: 1em 0;
+    }
+
+    a {
+      width: 50%;
+      background: coral;
+      color: white;
+      font-size: 0.9em;
+      padding: 0.8em;
+      border-radius: 5px;
+    }
   }
 }
