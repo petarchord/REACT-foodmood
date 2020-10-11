@@ -10,7 +10,8 @@ import {
   PastaMenu,
   UserProfile,
   UserNavbar,
-  UserOrders
+  UserOrders,
+  FoodMenu
 } from "./components";
 import { GlobalProvider, GlobalContext } from "./context/GlobalState";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
@@ -37,10 +38,10 @@ function App() {
           <Route path="/profile/orders" component={UserOrders} />  
           <Switch>
             <Route path="/" exact component={Home} />
-            <Route path="/pizzamenu" component={PizzaMenu} />
+            {/* <Route path="/pizzamenu" component={PizzaMenu} />
             <Route path="/burgermenu" component={BurgerMenu} />
-            <Route path="/pastamenu" component={PastaMenu} />
-            
+            <Route path="/pastamenu" component={PastaMenu} /> */}
+            <Route path="/food/:id" component={FoodMenu} />
             
             
             

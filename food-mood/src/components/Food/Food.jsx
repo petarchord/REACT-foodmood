@@ -12,7 +12,7 @@ const Food = () => {
     <div className={styles.container}>
       <ul>
         <li>
-          <Link to="/pizzamenu">
+          <Link to="/food/pizza">
             <FoodItem
               name="Pizza"
               desc="Check out our hot pizzas"
@@ -21,7 +21,7 @@ const Food = () => {
           </Link>
         </li>
         <li>
-          <Link to="/burgermenu">
+          <Link to="/food/burger">
             <FoodItem
               name="Burger"
               desc="Check out our delishes burgers"
@@ -30,7 +30,7 @@ const Food = () => {
           </Link>
         </li>
         <li>
-          <Link to="/pastamenu">
+          <Link to="/food/pasta">
             <FoodItem
               name="Pasta"
               desc="Check out our pastas"

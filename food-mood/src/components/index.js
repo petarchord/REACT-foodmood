@@ -8,3 +8,4 @@ export { default as PastaMenu } from "./PastaMenu/PastaMenu";
 export { default as UserProfile } from "./UserProfile/UserProfile";
 export {default as UserNavbar} from "./UserNavbar/UserNavbar";
 export {default as UserOrders} from "./UserOrders/UserOrders";
+export {default as FoodMenu } from "./FoodMenu/FoodMenu";

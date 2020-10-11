@@ -3,7 +3,10 @@ import styles from "./PizzaMenu.module.scss";
 import PizzaMenuItem from "../PizzaMenuItem/PizzaMenuItem";
 import ShopingCart from "../ShopingCart/ShopingCart";
 
-const PizzaMenu = () => {
+const PizzaMenu = (props) => {
+  console.log("props:",props.location.pathname);
+  let selectedFood = props.location.pathname.split("/");
+  console.log(selectedFood);
   return (
     <div className={styles.container}>
       <h3 className={styles.pizza_menu_title}>
