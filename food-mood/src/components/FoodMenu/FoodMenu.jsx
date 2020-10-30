@@ -2,15 +2,19 @@ import React from "react";
 import styles from "./FoodMenu.module.scss";
 import ShopingCart from "../ShopingCart/ShopingCart";
 import FoodMenuItem from "../FoodMenuItem/FoodMenuItem";
+import RestaurantSlider from "../RestaurantSlider/RestaurantSlider";
 const FoodMenu = (props) => {
-  console.log("props",props);
   let selectedFood = props.match.params.id;
   console.log(selectedFood);
     return ( <div className={styles.container}>
-         <h3 className={styles.food_menu_title}>
+         {/* <h3 className={styles.food_menu_title}>
         Order your favourite <span style={{ color: "coral" }}>{selectedFood}</span> in
         less than a minute.
+      </h3> */}
+      <h3 className={styles.food_menu_title}>
+        Welcome to the <span style={{ color: "coral" }}>{selectedFood}</span> world!
       </h3>
+      <RestaurantSlider />
       <FoodMenuItem
         key={0}
         id={0}

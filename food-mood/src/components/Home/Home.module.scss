@@ -12,11 +12,12 @@
   h1 {
     // position: relative;
     width: 10em;
+    height: 4em;
     margin-top: 5em;
     // margin-left: -4em;
-    // animation-name: welcome_text;
-    // animation-duration: 5s;
-    // animation-iteration-count: infinite;
+    animation-name: welcome_text;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
   }
 
   .second_title {
@@ -63,12 +64,12 @@
 
 @keyframes welcome_text {
   0% {
-    margin-left: -4em;
+    // margin-left: -4em;
     opacity: 0;
   }
 
   100% {
-    margin-left: 0em;
+    // margin-left: 0em;
     opacity: 1;
   }
 }
