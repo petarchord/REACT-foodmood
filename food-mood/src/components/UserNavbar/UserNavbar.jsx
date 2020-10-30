@@ -34,6 +34,15 @@ const UserNavbar = () => {
           </Link>
 
           </li>
+          <li className={selected === 3 ? styles.active : ""}>
+          <Link
+          onClick = {() => {setSelected(3)}}
+          to="/profile/payment"
+          >
+          Impressions
+          </Link>
+
+          </li>
         </ul>
       </nav>
       {selected === 0 ? <UserProfile /> : ""}

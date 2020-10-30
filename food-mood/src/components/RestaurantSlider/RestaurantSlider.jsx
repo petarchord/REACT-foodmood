@@ -6,19 +6,27 @@ import Restaurants from "../Restaurants/Restaurants";
 const RestaurantSlider = () => {
     return ( 
         <div className={styles.container}>
-<div className={styles.restaurant_container}>
-
+    <div className={styles.headline_holder}>
+    <p>Pick a restaurant</p>
+    <div className={styles.arrow_holder}>
     <MdKeyboardArrowLeft 
     size="2em"
     color="white"
     />
-    <Restaurants />
     <MdKeyboardArrowRight 
     size="2em"
     color="white"
     />
 
-</div>
+    </div>
+
+    </div>
+  
+    
+    <Restaurants />
+    
+
+
         </div>
      );
 }

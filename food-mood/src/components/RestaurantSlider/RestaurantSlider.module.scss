@@ -1,6 +1,32 @@
 .container {
-}
+  margin-bottom: 3em;
 
-.restaurant_container {
-  display: flex;
+  .headline_holder {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0.5em 0;
+
+    p {
+      padding: 0 0.5em;
+      font-size: 1.1em;
+      font-weight: bold;
+    }
+  }
+  .arrow_holder {
+    display: flex;
+    justify-content: flex-end;
+    padding: 0.5em;
+
+    svg {
+      color: white;
+      border: solid 1px;
+      border-radius: 50%;
+      background: darkslategray;
+    }
+
+    svg:first-child {
+      margin: 0 0.5em;
+    }
+  }
 }
