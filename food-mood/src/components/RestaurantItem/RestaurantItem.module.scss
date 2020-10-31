@@ -5,7 +5,7 @@
   border-radius: 5%;
   text-align: center;
   padding: 0.2em;
-  margin: 0 0.5em;
+  margin-right: 0.5em;
   background: rgba(20, 50, 30, 0.3);
 
   img {
@@ -21,4 +21,9 @@
 .active {
   background: rgba(20, 50, 30, 0.6);
   border: solid 1px coral;
+}
+
+.inactive {
+  background: rgba(20, 50, 30, 0.3);
+  border: solid 1px;
 }
