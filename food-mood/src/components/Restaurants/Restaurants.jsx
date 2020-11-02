@@ -6,56 +6,56 @@ import cezar_logo from "../../images/cezar-homepage-logo.png";
 
 
 
-const Restaurants = ({selected,setSelected}) => {
-    // const [selected ,setSelected] = useState(0);
+const Restaurants = ({selectedItem,setSelectedItem}) => {
+    // const [selected ,setSelectedItem] = useState(0);
     return ( <div id="res_slider" className={styles.container}>
 
         <RestaurantItem
         id = {0}
         name="Night and Day"
         image = {night_and_day_logo}
-        setSelected = {setSelected}
-        selected = {selected}
+        setSelectedItem = {setSelectedItem}
+        selectedItem = {selectedItem}
         rating = {3}
         />
         <RestaurantItem
         id = {1} 
         name="Cezar"
         image = {cezar_logo}
-        setSelected = {setSelected}
-        selected = {selected}
+        setSelectedItem = {setSelectedItem}
+        selectedItem = {selectedItem}
         rating = {4}
         />
         <RestaurantItem
         id = {2} 
         name ="Go-go"
         image={night_and_day_logo}
-        setSelected = {setSelected}
-        selected = {selected}
+        setSelectedItem = {setSelectedItem}
+        selectedItem = {selectedItem}
         rating = {2}
         />
         <RestaurantItem
         id = {3} 
         name ="Dva puta dva"
         image={night_and_day_logo}
-        setSelected = {setSelected}
-        selected = {selected}
+        setSelectedItem = {setSelectedItem}
+        selectedItem = {selectedItem}
         rating = {3}
         />
          <RestaurantItem
         id = {4} 
         name ="Pleasure"
         image={night_and_day_logo}
-        setSelected = {setSelected}
-        selected = {selected}
+        setSelectedItem = {setSelectedItem}
+        selectedItem = {selectedItem}
         rating = {3}
         />
          <RestaurantItem
         id = {5} 
         name ="Caribic "
         image={night_and_day_logo}
-        setSelected = {setSelected}
-        selected = {selected}
+        setSelectedItem = {setSelectedItem}
+        selectedItem = {selectedItem}
         rating = {3}
         />
 

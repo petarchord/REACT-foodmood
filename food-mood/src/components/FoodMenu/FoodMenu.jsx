@@ -4,7 +4,7 @@ import ShopingCart from "../ShopingCart/ShopingCart";
 import FoodMenuItem from "../FoodMenuItem/FoodMenuItem";
 import RestaurantSlider from "../RestaurantSlider/RestaurantSlider";
 const FoodMenu = (props) => {
-  const [selected,setSelected] = useState(0);
+  const [selectedItem,setSelectedItem] = useState({id:0,name:"Night and Day"});
   let selectedFood = props.match.params.id;
   console.log(selectedFood);
     return ( <div className={styles.container}>
@@ -16,9 +16,11 @@ const FoodMenu = (props) => {
         Welcome to the <span style={{ color: "coral" }}>{selectedFood}</span> world!
       </h3>
       <RestaurantSlider
-      selected = {selected}
-      setSelected = {setSelected}
+      selectedItem = {selectedItem}
+      setSelectedItem = {setSelectedItem}
       />
+
+    <h3>{selectedItem.name}</h3>
       <FoodMenuItem
         key={0}
         id={0}

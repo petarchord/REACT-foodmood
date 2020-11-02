@@ -4,7 +4,7 @@ import cx from "classnames";
 import {AiOutlineStar, AiFillStar} from "react-icons/ai";
 
 
-const RestaurantItem = ({id,name,image,selected,setSelected,rating}) => {
+const RestaurantItem = ({id,name,image,selectedItem,setSelectedItem,rating}) => {
     
    const renderStars = () => {
        let starArray = [];
@@ -18,14 +18,14 @@ const RestaurantItem = ({id,name,image,selected,setSelected,rating}) => {
        return starArray;
    }
    const toggleActiveStyles = index => {
-       if(selected === index)
+       if(selectedItem.id === index)
        return cx(styles.container,styles.active);
        else
        return cx(styles.container,styles.inactive)
    }
     return ( <div className={toggleActiveStyles(id)}
     onClick = {() => {
-        setSelected(id);
+        setSelectedItem({id,name});
     }}
     >
 <img src={image} alt={name}/>
