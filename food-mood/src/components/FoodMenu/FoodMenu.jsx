@@ -1,9 +1,10 @@
-import React from "react";
+import React, {useState} from "react";
 import styles from "./FoodMenu.module.scss";
 import ShopingCart from "../ShopingCart/ShopingCart";
 import FoodMenuItem from "../FoodMenuItem/FoodMenuItem";
 import RestaurantSlider from "../RestaurantSlider/RestaurantSlider";
 const FoodMenu = (props) => {
+  const [selected,setSelected] = useState(0);
   let selectedFood = props.match.params.id;
   console.log(selectedFood);
     return ( <div className={styles.container}>
@@ -14,7 +15,10 @@ const FoodMenu = (props) => {
       <h3 className={styles.food_menu_title}>
         Welcome to the <span style={{ color: "coral" }}>{selectedFood}</span> world!
       </h3>
-      <RestaurantSlider />
+      <RestaurantSlider
+      selected = {selected}
+      setSelected = {setSelected}
+      />
       <FoodMenuItem
         key={0}
         id={0}

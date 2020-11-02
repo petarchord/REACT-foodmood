@@ -3,7 +3,7 @@ import styles from "./RestaurantSlider.module.scss";
 import  { MdKeyboardArrowLeft, MdKeyboardArrowRight } from "react-icons/md";
 import Restaurants from "../Restaurants/Restaurants";
 
-const RestaurantSlider = () => {
+const RestaurantSlider = ({selected,setSelected}) => {
     return ( 
         <div className={styles.container}>
     <div className={styles.headline_holder}>
@@ -42,7 +42,10 @@ const RestaurantSlider = () => {
     </div>
   
     
-    <Restaurants />
+    <Restaurants
+    selected = {selected}
+    setSelected = {setSelected}
+    />
     
 
 

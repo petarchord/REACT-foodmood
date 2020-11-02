@@ -6,8 +6,8 @@ import cezar_logo from "../../images/cezar-homepage-logo.png";
 
 
 
-const Restaurants = () => {
-    const [selected ,setSelected] = useState(0);
+const Restaurants = ({selected,setSelected}) => {
+    // const [selected ,setSelected] = useState(0);
     return ( <div id="res_slider" className={styles.container}>
 
         <RestaurantItem
@@ -16,6 +16,7 @@ const Restaurants = () => {
         image = {night_and_day_logo}
         setSelected = {setSelected}
         selected = {selected}
+        rating = {3}
         />
         <RestaurantItem
         id = {1} 
@@ -23,6 +24,7 @@ const Restaurants = () => {
         image = {cezar_logo}
         setSelected = {setSelected}
         selected = {selected}
+        rating = {4}
         />
         <RestaurantItem
         id = {2} 
@@ -30,6 +32,7 @@ const Restaurants = () => {
         image={night_and_day_logo}
         setSelected = {setSelected}
         selected = {selected}
+        rating = {2}
         />
         <RestaurantItem
         id = {3} 
@@ -37,6 +40,7 @@ const Restaurants = () => {
         image={night_and_day_logo}
         setSelected = {setSelected}
         selected = {selected}
+        rating = {3}
         />
          <RestaurantItem
         id = {4} 
@@ -44,6 +48,7 @@ const Restaurants = () => {
         image={night_and_day_logo}
         setSelected = {setSelected}
         selected = {selected}
+        rating = {3}
         />
          <RestaurantItem
         id = {5} 
@@ -51,6 +56,7 @@ const Restaurants = () => {
         image={night_and_day_logo}
         setSelected = {setSelected}
         selected = {selected}
+        rating = {3}
         />
 
     </div> );
