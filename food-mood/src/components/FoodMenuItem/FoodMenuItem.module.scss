@@ -1,18 +1,29 @@
 .container {
-  width: 100%;
 }
 
 .food_menu_item {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   border: solid 1px lightgray;
+  border-radius: 10px;
+  margin: 0.3em 0;
 }
 
 .food_menu_img {
 }
 
 .food_menu_info {
-  margin: 2% 10%;
+  margin-bottom: 0.8em;
+
+  button {
+    font-size: 0.85rem;
+    padding: 0.3em;
+    background: rgba(50, 30, 30, 0.6);
+    color: white;
+    outline: none;
+    border-radius: 6px;
+    font-weight: bold;
+  }
 }
 
 .quantity {
@@ -20,9 +31,20 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 0 0.3em;
+
+  button {
+    font-size: 1.2rem;
+    /* height: 1.2rem; */
+    background: darkgoldenrod;
+    color: white;
+    font-weight: bold;
+    border-radius: 50%;
+  }
 }
 
 .food_menu_item img {
-  width: 7em;
+  width: 5.8em;
   height: 100%;
+  border-radius: 10px;
 }
