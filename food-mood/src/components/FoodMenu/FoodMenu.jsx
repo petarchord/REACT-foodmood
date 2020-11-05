@@ -13,7 +13,7 @@ const FoodMenu = (props) => {
         less than a minute.
       </h3> */}
       <h3 className={styles.food_menu_title}>
-        Welcome to the <span style={{ color: "coral" }}>{selectedFood}</span> world!
+        Welcome to the <span style={{ color: "coral" }}>{selectedFood}</span> world
       </h3>
       <RestaurantSlider
       selectedItem = {selectedItem}

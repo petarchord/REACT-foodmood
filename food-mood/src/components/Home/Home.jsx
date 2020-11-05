@@ -62,9 +62,9 @@ const Home = () => {
           <h2>food mood</h2>
           <p>Follow us.</p>
           <div className={styles.social_networks}>
-            <ImFacebook size="1.5em" color="white" />
-            <ImInstagram size="1.5em" color="white" />
-            <ImYoutube size="1.5em" color="white" />
+            <ImFacebook size="1.7em" color="white" />
+            <ImInstagram size="1.7em" color="white" />
+            <ImYoutube size="1.7em" color="white" />
           </div>
         </footer>
         <div className={styles.arrow_up}>
@@ -72,7 +72,7 @@ const Home = () => {
             onClick={() => {
               window.scrollTo({ top: 0, behavior: "smooth" });
             }}
-            size="2em"
+            size="1.7em"
             color="white"
           />
           <p>Take me to the top.</p>

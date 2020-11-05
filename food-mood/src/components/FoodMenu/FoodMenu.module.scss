@@ -7,7 +7,21 @@
   padding: 5em 0em;
 
   .food_menu_title {
-    // text-align: left;
-    // padding: 2em 1em;
+    margin-top: 3em;
+    font-size: 1.5rem;
+    animation-name: food_menu_text;
+    animation-duration: 3s;
+  }
+}
+
+@keyframes food_menu_text {
+  0% {
+    // margin-left: -4em;
+    opacity: 0;
+  }
+
+  100% {
+    // margin-left: 0em;
+    opacity: 1;
   }
 }
