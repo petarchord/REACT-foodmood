@@ -1,19 +1,30 @@
 .container {
   .order_item {
+    // display: flex;
+    // justify-content: space-between;
+    // border-bottom: solid 1px gray;
     display: flex;
     justify-content: space-between;
-    border-bottom: solid 1px gray;
+    border: solid 1px lightgray;
+    border-radius: 10px;
+    margin: 0.3em 0;
   }
 
   img {
-    width: 7em;
-    height: 7em;
-    filter: none;
+    // width: 7em;
+    // height: 7em;
+    // filter: none;
+    width: 5.8em;
+    border-radius: 10px;
   }
 
   .info_wrapper {
     position: relative;
     top: -0.8em;
+
+    p {
+      font-size: 0.85rem;
+    }
   }
 
   .btn_quantity_wrapper {

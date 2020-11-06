@@ -10,11 +10,11 @@ const RestaurantSlider = ({selectedItem,setSelectedItem}) => {
     <p>Pick a restaurant</p>
     <div className={styles.arrow_holder}>
     <MdKeyboardArrowLeft 
-    size="2em"
+    size="1.8em"
     color="white"
     />
     <MdKeyboardArrowRight 
-    size="2em"
+    size="1.8em"
     color="white"
     onClick= { () => {
         let res_slider = document.getElementById("res_slider");

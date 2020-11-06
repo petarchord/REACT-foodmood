@@ -11,6 +11,7 @@ const Order = () => {
           key={orderItem.id}
           id={orderItem.id}
           name={orderItem.name}
+          ingredients= {orderItem.ingredients}
           price={orderItem.price}
           image={orderItem.image}
           quantity={orderItem.quantity}

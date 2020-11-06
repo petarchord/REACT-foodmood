@@ -25,6 +25,7 @@ const FoodMenu = (props) => {
         key={0}
         id={0}
         name="Napolitana"
+        ingredients= "ham,cheese,tomato"
         price={12}
         image="tuna.jpg"
       />
@@ -32,6 +33,7 @@ const FoodMenu = (props) => {
         key={1}
         id={1}
         name="Carbonara"
+        ingredients= "ham,cheese,tomato"
         price={11}
         image="napolitana.jpg"
       />
@@ -39,6 +41,7 @@ const FoodMenu = (props) => {
         key={2}
         id={2}
         name="Bolognese"
+        ingredients= "ham,cheese,tomato"
         price={11.5}
         image="chili.jpg"
       />
@@ -47,6 +50,7 @@ const FoodMenu = (props) => {
         key={3}
         id={3}
         name="Alfredo Tachini"
+        ingredients= "ham,cheese,tomato"
         price={11.5}
         image="kalimero.jpg"
       />
