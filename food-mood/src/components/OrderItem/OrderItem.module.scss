@@ -14,7 +14,7 @@
     // width: 7em;
     // height: 7em;
     // filter: none;
-    width: 5.8em;
+    width: 6.5em;
     border-radius: 10px;
   }
 
@@ -31,5 +31,17 @@
     position: relative;
     top: 0.5em;
     right: 0.7em;
+  }
+}
+
+@media (min-width: 360px) {
+  .container img {
+    width: 7em;
+  }
+}
+
+@media (min-width: 411px) {
+  .container img {
+    width: 8em;
   }
 }

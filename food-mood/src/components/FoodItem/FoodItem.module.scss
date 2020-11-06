@@ -4,12 +4,19 @@
 .content_wrapper {
   img {
     width: 13.5em;
-    height: 13em;
+    height: 13.5em;
     border-radius: 120px;
     border: solid 2px;
   }
   h5 {
     font-size: 1.3rem;
     margin: 0.5em 0;
+  }
+}
+
+@media (min-width: 375px) {
+  .content_wrapper img {
+    width: 14em;
+    height: 14em;
   }
 }

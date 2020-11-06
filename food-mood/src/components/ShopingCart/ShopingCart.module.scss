@@ -6,12 +6,12 @@
   left: 0;
   background: black;
   transition: height 0.3s ease-in-out 0s;
+  z-index: 11;
   .cart_wrapper {
     display: flex;
     align-items: center;
     justify-content: space-around;
     border-top: solid 3px coral;
-    border-bottom: solid 1px gray;
   }
 
   .down_arrow {
