@@ -4,3 +4,9 @@
   max-height: 20em;
   overflow: scroll;
 }
+
+@media (min-height: 900px) {
+  .container {
+    max-height: 595px;
+  }
+}

@@ -5,6 +5,7 @@ import FoodItem from "../FoodItem/FoodItem";
 import pizza_img from "../../images/pizzas.jpg";
 import burger_img from "../../images/burger.jpg";
 import pasta_img from "../../images/pasta.jpg";
+import chinese_img from "../../images/chinese.jpg";
 import { Link } from "react-router-dom";
 
 const Food = () => {
@@ -35,6 +36,15 @@ const Food = () => {
               name="Pasta"
               desc="Check out our pastas"
               img={pasta_img}
+            />
+          </Link>
+        </li>
+        <li>
+          <Link to="/food/chinese">
+            <FoodItem
+              name="Chinese"
+              desc="Check out our chinese food"
+              img={chinese_img}
             />
           </Link>
         </li>
