@@ -6,6 +6,11 @@ import { FaArrowCircleUp } from "react-icons/fa";
 
 const Home = () => {
 
+  let user;
+  if(localStorage.getItem("user"))
+  {
+    user = JSON.parse(localStorage.getItem("user"));
+  }
   const changeTitle = () => {
     let title = document.getElementById("welcome_title");
     console.log("title:",title);
@@ -49,11 +54,15 @@ const Home = () => {
     <div onLoad={() => {changeTitle();}} className={styles.container}>
       <div className={styles.home_wrapper}>
         <h1 id="welcome_title">We deliver your favourite food fast and easy.</h1>
+        {/* <h3>We made it simple for you. Pick your favourite food and we will find rest.
+
+        </h3> */}
         {/* <h1 style={{display:"none"}}>If you are hungry and not sure what to eat, you are on the right place.</h1>
         <h1 style={{display:"none"}}>It is all about food. We are in the mission of serving your taste.</h1> */}
         <div className={styles.second_title}>
           <h2 id="second_title">
-            What's your <span style={{ color: "coral" }}>food mood</span> today?
+      What's your <span style={{ color: "coral" }}>food mood</span> today <span>{user ? user.givenName : ""}</span> ?
+
           </h2>
         </div>
 

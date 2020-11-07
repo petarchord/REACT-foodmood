@@ -13,40 +13,32 @@ const Food = () => {
     <div className={styles.container}>
       <ul>
         <li>
-          <Link to="/food/pizza">
             <FoodItem
               name="Pizza"
               desc="Check out our hot pizzas"
               img={pizza_img}
-            />
-          </Link>
+            /> 
         </li>
         <li>
-          <Link to="/food/burger">
             <FoodItem
               name="Burger"
               desc="Check out our delishes burgers"
               img={burger_img}
             />
-          </Link>
         </li>
         <li>
-          <Link to="/food/pasta">
             <FoodItem
               name="Pasta"
               desc="Check out our pastas"
               img={pasta_img}
             />
-          </Link>
         </li>
         <li>
-          <Link to="/food/chinese">
             <FoodItem
               name="Chinese"
               desc="Check out our chinese food"
               img={chinese_img}
             />
-          </Link>
         </li>
       </ul>
     </div>

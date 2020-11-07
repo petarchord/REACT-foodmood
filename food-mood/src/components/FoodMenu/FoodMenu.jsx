@@ -13,7 +13,8 @@ const FoodMenu = (props) => {
         less than a minute.
       </h3> */}
       <h3 className={styles.food_menu_title}>
-        Welcome to the <span style={{ color: "coral" }}>{selectedFood}</span> world
+        Welcome to the <span style={{ color: "coral" }}>{selectedFood}</span> world.
+        You are one step away from your favourite pizza.
       </h3>
       <RestaurantSlider
       selectedItem = {selectedItem}
@@ -49,6 +50,33 @@ const FoodMenu = (props) => {
       <FoodMenuItem
         key={3}
         id={3}
+        name="Alfredo Tachini"
+        ingredients= "ham,cheese,tomato"
+        price={11.5}
+        image="kalimero.jpg"
+      />
+
+<FoodMenuItem
+        key={4}
+        id={4}
+        name="Alfredo Tachini"
+        ingredients= "ham,cheese,tomato"
+        price={11.5}
+        image="kalimero.jpg"
+      />
+
+<FoodMenuItem
+        key={5}
+        id={5}
+        name="Alfredo Tachini"
+        ingredients= "ham,cheese,tomato"
+        price={11.5}
+        image="kalimero.jpg"
+      />
+
+<FoodMenuItem
+        key={6}
+        id={6}
         name="Alfredo Tachini"
         ingredients= "ham,cheese,tomato"
         price={11.5}
