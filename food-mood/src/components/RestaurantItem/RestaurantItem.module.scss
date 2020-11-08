@@ -25,10 +25,22 @@
 
 .active {
   background: rgba(20, 50, 30, 0.6);
-  border: solid 1px coral;
+  border: solid 1px orange;
 }
 
 .inactive {
   background: rgba(20, 50, 30, 0.3);
   border: solid 1px;
+}
+
+@media (min-width: 410px) {
+  .container {
+    padding: 0.5em;
+  }
+}
+
+@media (min-width: 600px) {
+  .container {
+    padding: 1em;
+  }
 }
