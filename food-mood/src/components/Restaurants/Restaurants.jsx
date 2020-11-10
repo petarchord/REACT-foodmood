@@ -17,6 +17,7 @@ const Restaurants = ({selectedItem,setSelectedItem}) => {
         setSelectedItem = {setSelectedItem}
         selectedItem = {selectedItem}
         rating = {3}
+        deliveryPrice = {10}
         />
         <RestaurantItem
         id = {1} 
@@ -25,6 +26,7 @@ const Restaurants = ({selectedItem,setSelectedItem}) => {
         setSelectedItem = {setSelectedItem}
         selectedItem = {selectedItem}
         rating = {4}
+        deliveryPrice = {10}
         />
         <RestaurantItem
         id = {2} 
@@ -33,6 +35,7 @@ const Restaurants = ({selectedItem,setSelectedItem}) => {
         setSelectedItem = {setSelectedItem}
         selectedItem = {selectedItem}
         rating = {2}
+        deliveryPrice = {10}
         />
         <RestaurantItem
         id = {3} 
@@ -41,6 +44,7 @@ const Restaurants = ({selectedItem,setSelectedItem}) => {
         setSelectedItem = {setSelectedItem}
         selectedItem = {selectedItem}
         rating = {3}
+        deliveryPrice = {10}
         />
          <RestaurantItem
         id = {4} 
@@ -49,6 +53,7 @@ const Restaurants = ({selectedItem,setSelectedItem}) => {
         setSelectedItem = {setSelectedItem}
         selectedItem = {selectedItem}
         rating = {3}
+        deliveryPrice = {10}
         />
          <RestaurantItem
         id = {5} 
@@ -57,6 +62,7 @@ const Restaurants = ({selectedItem,setSelectedItem}) => {
         setSelectedItem = {setSelectedItem}
         selectedItem = {selectedItem}
         rating = {3}
+        deliveryPrice = {10}
         />
 
     </div> );
