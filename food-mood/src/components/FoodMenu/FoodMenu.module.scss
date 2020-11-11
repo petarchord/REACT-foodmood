@@ -14,6 +14,11 @@
     animation-name: food_menu_text;
     animation-duration: 3s;
   }
+
+  .food_menu_items {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
 }
 
 @keyframes food_menu_text {
