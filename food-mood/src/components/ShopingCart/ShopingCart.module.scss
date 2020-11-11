@@ -28,9 +28,17 @@
     margin-top: 1em;
   }
 
-  .empty_cart_text {
-    padding: 2em;
-    color: gray;
+  .empty_cart {
+    display: flex;
+    align-items: center;
+    padding: 1em;
+
+    svg {
+      margin: 0 0.5em;
+    }
+    p {
+      color: gray;
+    }
   }
 
   .btn_wrapper {

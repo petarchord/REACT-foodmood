@@ -16,11 +16,12 @@ const FoodMenu = (props) => {
         Order your favourite <span style={{ color: "coral" }}>{selectedFood}</span> in
         less than a minute.
       </h3> */}
-      <div></div>
-      <h3 className={styles.food_menu_title}>
-        Welcome to the <span style={{ color: "coral" }}>{selectedFood}</span>{" "}
-        world. You are one step away from your favourite pizza.
-      </h3>
+      <div className={styles.wallpaper_wrapper}>
+        <h3 className={styles.food_menu_title}>
+          Welcome to the <span style={{ color: "coral" }}>{selectedFood}</span>{" "}
+          world. You are one step away from your favourite pizza.
+        </h3>
+      </div>
       <RestaurantSlider
         selectedItem={selectedItem}
         setSelectedItem={setSelectedItem}
