@@ -37,12 +37,12 @@ const FoodMenuItem = ({ id, name, price, image, ingredients }) => {
         </div>
 
         <div className={styles.row_item}>
-          <p>x</p>
-          <p>{quantity}</p>
+          <p>{ingredients}</p>
+          <p>x{quantity}</p>
         </div>
 
         <div className={styles.row_item}>
-          <p>{ingredients}</p>
+          <p>{price}$</p>
           <FiMinusCircle
             size="1.8em"
             onClick={(e) => {
@@ -52,8 +52,7 @@ const FoodMenuItem = ({ id, name, price, image, ingredients }) => {
           />
         </div>
 
-        <div className={styles.row_item}>
-          <p>{price}$</p>
+        <div className={styles.add_to_cart}>
           <button
             onClick={() => {
               addItemClickHandler();
