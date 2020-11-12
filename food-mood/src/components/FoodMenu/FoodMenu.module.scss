@@ -1,24 +1,26 @@
 .container {
-  width: 100%;
-  /* margin-top: 9em; */
   margin: 0 auto;
-  //background: url(../../images/pizza_wallpaper_two.jpg);
-  //overflow: scroll;
-  // max-height: 700px;
-
-  padding: 5em 1em;
 
   .food_menu_title {
-    margin-top: 3em;
+    margin-top: 2.5em;
     font-size: 1.5rem;
-    animation-name: food_menu_text;
+    animation-name: FoodMenu_FoodMenu_food_menu_text__21M9Y__31qef;
     animation-duration: 3s;
+    padding: 4em 1em;
+    background: rgba(0, 0, 0, 0.4);
+    margin-bottom: -1em;
   }
 
   .wallpaper_wrapper {
-    background-size: cover;
     background: url("../../images//pizza_wallpaper_two.jpg");
     background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .food_restaurants_wrapper {
+    padding: 0 1em;
+    background: black;
   }
 
   .food_menu_items {

@@ -7,4 +7,25 @@
   overflow-x: auto;
   white-space: nowrap;
   margin: 1em 0;
+
+  .arrow_holder {
+    svg {
+      color: white;
+      border: solid 1px;
+      border-radius: 50%;
+      background: darkslategray;
+    }
+
+    svg:first-child {
+      position: absolute;
+      top: 50%;
+      left: 0;
+    }
+
+    svg:nth-child(2) {
+      position: absolute;
+      top: 50%;
+      right: 0;
+    }
+  }
 }
