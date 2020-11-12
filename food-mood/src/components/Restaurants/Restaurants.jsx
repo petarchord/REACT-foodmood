@@ -10,10 +10,10 @@ const Restaurants = ({ selectedItem, setSelectedItem }) => {
   return (
     <div id="res_slider" className={styles.container}>
       <div className={styles.arrow_holder}>
-        <MdKeyboardArrowLeft size="2em" color="white" />
+        <MdKeyboardArrowLeft size="2.5em" color="gray" />
         <MdKeyboardArrowRight
-          size="2em"
-          color="white"
+          size="2.5em"
+          color="gray"
           onClick={() => {
             let res_slider = document.getElementById("res_slider");
             // let inc = 135 - res_slider.scrollLeft;
