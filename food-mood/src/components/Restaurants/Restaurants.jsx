@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import styles from "./Restaurants.module.scss";
 import RestaurantItem from "../RestaurantItem/RestaurantItem";
 import night_and_day_logo from "../../images/nightandday.png";
@@ -6,31 +6,44 @@ import cezar_logo from "../../images/cezar-homepage-logo.png";
 import { MdKeyboardArrowLeft, MdKeyboardArrowRight } from "react-icons/md";
 
 const Restaurants = ({ selectedItem, setSelectedItem }) => {
-  // const [selected ,setSelectedItem] = useState(0);
+  const sliderRef = useRef();
+  const slide = (e) => {
+    console.log(e.target);
+  };
   return (
-    <div id="res_slider" className={styles.container}>
+    <div id="res_slider" ref={sliderRef} className={styles.container}>
       <div className={styles.arrow_holder}>
-        <MdKeyboardArrowLeft size="2.5em" color="gray" />
-        <MdKeyboardArrowRight
+        <MdKeyboardArrowLeft
+          name="left"
           size="2.5em"
           color="gray"
-          onClick={() => {
-            let res_slider = document.getElementById("res_slider");
-            // let inc = 135 - res_slider.scrollLeft;
-            let inc;
-            if (res_slider.scrollLeft % 142 === 0) {
-              if (res_slider.scrollLeft === 0) inc = 136;
-              else inc = 142;
-            } else {
-              inc = Math.abs(142 - res_slider.scrollLeft);
-            }
-            console.log(res_slider.style);
-            console.log(res_slider.scrollLeft);
-            res_slider.scroll({
-              left: res_slider.scrollLeft + inc,
-              behavior: "smooth",
-            });
+          onClick={(e) => {
+            slide(e);
           }}
+        />
+        <MdKeyboardArrowRight
+          name="right"
+          size="2.5em"
+          color="gray"
+          onClick={(e) => {
+            slide(e);
+          }}
+          // onClick={() => {
+
+          //   let inc;
+          //   if (sliderRef.current.scrollLeft % 142 === 0) {
+          //     if (sliderRef.current.scrollLeft === 0) inc = 136;
+          //     else inc = 142;
+          //   } else {
+          //     inc = Math.abs(142 - sliderRef.current.scrollLeft);
+          //   }
+          //   console.log(sliderRef.current.style);
+          //   console.log(sliderRef.current.scrollLeft);
+          //   sliderRef.current.scroll({
+          //     left: sliderRef.current.scrollLeft + inc,
+          //     behavior: "smooth",
+          //   });
+          // }}
         />
       </div>
       <RestaurantItem
