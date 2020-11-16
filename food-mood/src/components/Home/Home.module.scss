@@ -1,22 +1,20 @@
 .container {
-  // background: url("../../images/background-image.jpg");
-  // background-size: cover;
-  // background-repeat: no-repeat;
+  background: url(/static/media/background-image-second.c460d6ca.jpg);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: auto;
 }
 
 .home_wrapper {
-  // padding: 1.5em;
-  // margin: 0 auto;
-  // max-width: 1200px;
+  background: rgba(0, 0, 0, 0.4);
   padding: 0 1em;
   margin: 0 auto;
-  background: rgba(0, 0, 0, 0.4);
 
   h1 {
     // position: relative;
 
     height: 3em;
-    margin-top: 5em;
+    padding-top: 5em;
     font-size: 1.75rem;
     animation-name: welcome_text;
     animation-duration: 5s;

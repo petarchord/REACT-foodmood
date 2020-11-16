@@ -8,7 +8,7 @@ import { MdKeyboardArrowLeft, MdKeyboardArrowRight } from "react-icons/md";
 const Restaurants = ({ selectedItem, setSelectedItem }) => {
   const sliderRef = useRef();
   const slide = (e) => {
-    console.log(e.target);
+    console.log(sliderRef.current);
   };
   return (
     <div id="res_slider" ref={sliderRef} className={styles.container}>
